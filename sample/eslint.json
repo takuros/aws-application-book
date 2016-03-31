@@ -1,0 +1,19 @@
+{
+  "env": {
+    "es6" : true,
+    "node" : true,
+    "browser" : true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-console": 0,
+    "no-cond-assign": [1, "always"],
+    "semi" : [2, "always", { "omitLastInOneLineBlock": true}],
+    "key-spacing" : [1, {
+      "beforeColon" : true,
+      "afterColon"  : true,
+      "align"       : "colon"
+    }],
+    "no-unused-vars": [1, {"vars" : "all", "args" : "after-used"} ]
+  }
+}
