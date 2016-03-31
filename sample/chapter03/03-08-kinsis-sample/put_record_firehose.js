@@ -9,17 +9,17 @@ function sendTemperatureData(count) {
   // タイムスタンプ
   var timestamp = (new Date).getTime();
   // ランダムに温度データを生成
-  var temperature = Number((Math.random() * 20).toFixed(2)) + 10
+  var temperature = Number((Math.random() * 20).toFixed(2)) + 10;
   // CSV レコードを作成
   var data = '"' + temperature + '","' + timestamp + '"\n';
 
   var params = {
-    Record: {
+    Record : {
       // データレコードBLOB
-      Data: new Buffer(data)
+      Data : new Buffer(data)
     },
     // デリバリーストリーム名
-    DeliveryStreamName: "TemperatureSensorFirehose"
+    DeliveryStreamName : "TemperatureSensorFirehose"
   };
 
   firehose.putRecord(params, function(err, data) {

@@ -13,17 +13,17 @@ function sendTemperatureData(count) {
   var data = {
     // ランダムに温度データを生成
     temperature : Number((Math.random() * 20).toFixed(2)) + 10,
-    timestamp : now
-  }
+    timestamp   : now
+  };
 
   // パーティションキーを生成
   var partitionKey = now.toString().split("").reverse().join("");
 
   // Putパラメータ
   var params = {
-    Data: new Buffer(JSON.stringify(data)), // データレコードBLOB
-    PartitionKey: partitionKey,             // パーティションキー
-    StreamName: "TemperatureSensorStream"   // ストリーム名
+    Data         : new Buffer(JSON.stringify(data)), // データレコードBLOB
+    PartitionKey : partitionKey,                     // パーティションキー
+    StreamName   : "TemperatureSensorStream"         // ストリーム名
   };
 
   kinesis.putRecord(params, function(err, data) {
