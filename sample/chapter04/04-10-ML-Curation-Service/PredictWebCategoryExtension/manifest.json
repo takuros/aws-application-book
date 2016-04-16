@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name" : "Predict Web Category",
+  "version": "1.0",
+  "background" : {
+    "scripts" : [
+      "bower_components/kuromoji/dist/browser/kuromoji.js",
+      "bower_components/jquery/dist/jquery.min.js",
+      "background.js"
+    ],
+    "persistent" : true
+  },
+  "content_scripts" : [{
+    "matches" : ["http://*/*", "https://*/*"],
+    "js" : [
+      "bower_components/jquery/dist/jquery.min.js",
+      "content_script.js"
+    ]
+  }],
+  "browser_action" : {
+    "default_popup" : "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "https://<random>.execute-api.ap-northeast-1.amazonaws.com/v1/"
+  ]
+}

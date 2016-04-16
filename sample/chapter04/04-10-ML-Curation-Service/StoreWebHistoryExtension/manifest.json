@@ -1,0 +1,14 @@
+{
+  "name" : "Store Web History Extension",
+  "version" : "1.0",
+  "description" : "",
+  "background" : {
+    "scripts" : ["bower_components/simple-uuid/uuid.js", "bower_components/jquery/dist/jquery.min.js", "background.js"],
+    "persistent" : false
+  },
+  "permissions" : [
+    "history",
+    "https://<ランダム>.execute-api.ap-northeast-1.amazonaws.com/"
+  ],
+  "manifest_version" : 2
+}
