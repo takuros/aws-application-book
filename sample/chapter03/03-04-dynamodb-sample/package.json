@@ -1,0 +1,14 @@
+{
+  "name": "03-04-dynamodb-sample",
+  "version": "0.0.0",
+  "description": "dynamodb node.js sample",
+  "main": "01_PutItem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.3.3"
+  }
+}
