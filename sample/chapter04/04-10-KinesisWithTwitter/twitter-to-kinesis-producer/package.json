@@ -1,0 +1,16 @@
+{
+  "name": "aws-app-book-twitter-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.2.33",
+    "twitter": "^1.2.5"
+  }
+}
