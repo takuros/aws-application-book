@@ -1,0 +1,4 @@
+{
+    "id_token" :"$input.params().header.get('google_id_token')",
+    "access_token" :"$input.params().header.get('google_access_token')"
+}
