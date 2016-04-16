@@ -1,0 +1,14 @@
+{
+  "name": "03-09-sqs-sample",
+  "version": "0.0.0",
+  "description": "sqs node.js sample",
+  "main": "01_SendMessage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.3.3"
+  }
+}
