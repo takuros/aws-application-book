@@ -1,0 +1,17 @@
+{
+  "name": "dynamodb-stream-socketio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "consumer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.2.39",
+    "socket.io": "^1.4.5"
+  }
+}
