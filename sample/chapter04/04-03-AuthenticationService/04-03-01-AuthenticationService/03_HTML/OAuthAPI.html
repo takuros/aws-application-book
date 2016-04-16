@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google+ Cognito Auth</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/1.2.0/superagent.min.js" ></script>
+
+  <script>
+    var auth2 = {};
+    function googleAuth() {
+      var params = {
+        client_id:　＜Google Developers Consoleで取得したClient ID＞,
+        fetch_basic_profile: false,
+        scope:'https://www.googleapis.com/auth/plus.login'
+      }
+      gapi.load('auth2', function() {
+        gapi.client.load('plus','v1').then(function() {
+          gapi.signin2.render('signin-button', {
+              scope: 'https://www.googleapis.com/auth/plus.login',
+              fetch_basic_profile: false });
+          gapi.auth2.init(params).then(
+              function (){
+                console.log('init');
+                auth2 = gapi.auth2.getAuthInstance();
+                console.log(auth2.currentUser.get().getAuthResponse());
+              }
+          );
+        });
+      });
+    }
+    function register() {
+      var request = window.superagent;
+      var url = ＜作成したAPI GatewayのURL＞;
+      request.post(url)
+        .set('google_id_token', auth2.currentUser.get().getAuthResponse().id_token)
+        .set('google_access_token', auth2.currentUser.get().getAuthResponse().access_token)
+        .end(function(err, res){
+            document.getElementById('status').innerHTML = JSON.stringify(res.body);
+        });
+    }
+
+  </script>
+</head>
+<body>
+  <div id="gConnect"><div id="signin-button"></div></div>
+  <button onclick="register();">Register</button>
+  <div id="status"></div>
+<script src="https://apis.google.com/js/client:platform.js?onload=googleAuth"></script>
+</body>
+</html>
