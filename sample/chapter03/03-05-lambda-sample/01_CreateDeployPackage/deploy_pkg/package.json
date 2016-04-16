@@ -1,0 +1,17 @@
+{
+  "name": "deploy_pkg_sample",
+  "version": "0.0.0",
+  "description": "lambda node.js deploy package sample",
+  "main": "price.js",
+  "dependencies": {
+    "request": "^2.71.0"
+  },
+  "devDependencies": {
+    "request": "^2.71.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
