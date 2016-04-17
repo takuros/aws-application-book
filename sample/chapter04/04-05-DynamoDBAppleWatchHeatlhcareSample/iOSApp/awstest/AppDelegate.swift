@@ -13,6 +13,7 @@ import HealthKit
 //TODO Identiferの設定変更(WKCompanionAppBundleIdentifierやWKCompanionAppBundleIdentifierも含む)
 //TODO Code signingの設定変更
 //TODO プロビジョニングの設定変更
+//TODO HealthKitの有効化
 
 
 @UIApplicationMain
