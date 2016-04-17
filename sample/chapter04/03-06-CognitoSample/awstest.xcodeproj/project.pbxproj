@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB1F79971CA836FB00F00C60 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1F79951CA836FB00F00C60 /* FBSDKCoreKit.framework */; };
+		CB1F79981CA836FC00F00C60 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB1F79961CA836FB00F00C60 /* FBSDKLoginKit.framework */; };
+		CB1F799C1CA8DCEB00F00C60 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1F799B1CA8DCEB00F00C60 /* Constants.swift */; };
+		CB1F799E1CA8EFA900F00C60 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1F799D1CA8EFA900F00C60 /* LoginManager.swift */; };
+		CB1F79A01CA8F08200F00C60 /* ReceivePushSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1F799F1CA8F08200F00C60 /* ReceivePushSyncManager.swift */; };
+		CB3552DF1C982E9D002C046D /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3552D91C982E9D002C046D /* AWSCore.framework */; };
+		CB3552E01C982E9D002C046D /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3552DA1C982E9D002C046D /* AWSSNS.framework */; };
+		CB3552E11C982E9D002C046D /* Amazon Software License.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB3552DC1C982E9D002C046D /* Amazon Software License.txt */; };
+		CB3552E21C982E9D002C046D /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3552DD1C982E9D002C046D /* AWSCognito.framework */; };
+		CB3552E31C982E9D002C046D /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = CB3552DE1C982E9D002C046D /* NOTICE */; };
+		CB3552E51C983091002C046D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3552E41C983091002C046D /* libsqlite3.tbd */; };
+		CB3552E71C98309D002C046D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3552E61C98309D002C046D /* libz.tbd */; };
+		CB3552E91C9830A4002C046D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3552E81C9830A4002C046D /* SystemConfiguration.framework */; };
+		CBC13F111C77739F00D5CDA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC13F101C77739F00D5CDA7 /* AppDelegate.swift */; };
+		CBC13F131C77739F00D5CDA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC13F121C77739F00D5CDA7 /* ViewController.swift */; };
+		CBC13F161C77739F00D5CDA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC13F141C77739F00D5CDA7 /* Main.storyboard */; };
+		CBC13F181C77739F00D5CDA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC13F171C77739F00D5CDA7 /* Assets.xcassets */; };
+		CBC13F1B1C77739F00D5CDA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC13F191C77739F00D5CDA7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CBF99EBF1C842843005A0FFE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CB1F79951CA836FB00F00C60 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		CB1F79961CA836FB00F00C60 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		CB1F799B1CA8DCEB00F00C60 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CB1F799D1CA8EFA900F00C60 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		CB1F799F1CA8F08200F00C60 /* ReceivePushSyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceivePushSyncManager.swift; sourceTree = "<group>"; };
+		CB3552D91C982E9D002C046D /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		CB3552DA1C982E9D002C046D /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSNS.framework; sourceTree = "<group>"; };
+		CB3552DC1C982E9D002C046D /* Amazon Software License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Amazon Software License.txt"; sourceTree = "<group>"; };
+		CB3552DD1C982E9D002C046D /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = "<group>"; };
+		CB3552DE1C982E9D002C046D /* NOTICE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE; sourceTree = "<group>"; };
+		CB3552E41C983091002C046D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CB3552E61C98309D002C046D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CB3552E81C9830A4002C046D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CBC13F0D1C77739F00D5CDA7 /* awstest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = awstest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC13F101C77739F00D5CDA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBC13F121C77739F00D5CDA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBC13F151C77739F00D5CDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBC13F171C77739F00D5CDA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBC13F1A1C77739F00D5CDA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBC13F1C1C77739F00D5CDA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBC13F7C1C77767F00D5CDA7 /* aws-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "aws-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBC13F0A1C77739F00D5CDA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3552E91C9830A4002C046D /* SystemConfiguration.framework in Frameworks */,
+				CB3552E71C98309D002C046D /* libz.tbd in Frameworks */,
+				CB3552E51C983091002C046D /* libsqlite3.tbd in Frameworks */,
+				CB3552E21C982E9D002C046D /* AWSCognito.framework in Frameworks */,
+				CB1F79971CA836FB00F00C60 /* FBSDKCoreKit.framework in Frameworks */,
+				CB3552DF1C982E9D002C046D /* AWSCore.framework in Frameworks */,
+				CB1F79981CA836FC00F00C60 /* FBSDKLoginKit.framework in Frameworks */,
+				CB3552E01C982E9D002C046D /* AWSSNS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB3552D81C982E84002C046D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CB1F79951CA836FB00F00C60 /* FBSDKCoreKit.framework */,
+				CB1F79961CA836FB00F00C60 /* FBSDKLoginKit.framework */,
+				CB3552E61C98309D002C046D /* libz.tbd */,
+				CB3552E41C983091002C046D /* libsqlite3.tbd */,
+				CB3552E81C9830A4002C046D /* SystemConfiguration.framework */,
+				CB3552D91C982E9D002C046D /* AWSCore.framework */,
+				CB3552DA1C982E9D002C046D /* AWSSNS.framework */,
+				CB3552DB1C982E9D002C046D /* extras */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		CB3552DB1C982E9D002C046D /* extras */ = {
+			isa = PBXGroup;
+			children = (
+				CB3552DC1C982E9D002C046D /* Amazon Software License.txt */,
+				CB3552DD1C982E9D002C046D /* AWSCognito.framework */,
+				CB3552DE1C982E9D002C046D /* NOTICE */,
+			);
+			path = extras;
+			sourceTree = "<group>";
+		};
+		CBC13F041C77739F00D5CDA7 = {
+			isa = PBXGroup;
+			children = (
+				CBC13F0F1C77739F00D5CDA7 /* awstest */,
+				CBC13F0E1C77739F00D5CDA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBC13F0E1C77739F00D5CDA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBC13F0D1C77739F00D5CDA7 /* awstest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBC13F0F1C77739F00D5CDA7 /* awstest */ = {
+			isa = PBXGroup;
+			children = (
+				CB3552D81C982E84002C046D /* Library */,
+				CBC13F101C77739F00D5CDA7 /* AppDelegate.swift */,
+				CBC13F121C77739F00D5CDA7 /* ViewController.swift */,
+				CB1F799D1CA8EFA900F00C60 /* LoginManager.swift */,
+				CB1F799F1CA8F08200F00C60 /* ReceivePushSyncManager.swift */,
+				CB1F799B1CA8DCEB00F00C60 /* Constants.swift */,
+				CBC13F141C77739F00D5CDA7 /* Main.storyboard */,
+				CBC13F171C77739F00D5CDA7 /* Assets.xcassets */,
+				CBC13F191C77739F00D5CDA7 /* LaunchScreen.storyboard */,
+				CBC13F1C1C77739F00D5CDA7 /* Info.plist */,
+				CBC13F7C1C77767F00D5CDA7 /* aws-Bridging-Header.h */,
+			);
+			path = awstest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBC13F0C1C77739F00D5CDA7 /* awstest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC13F1F1C77739F00D5CDA7 /* Build configuration list for PBXNativeTarget "awstest" */;
+			buildPhases = (
+				CBC13F091C77739F00D5CDA7 /* Sources */,
+				CBC13F0A1C77739F00D5CDA7 /* Frameworks */,
+				CBC13F0B1C77739F00D5CDA7 /* Resources */,
+				CBF99EBF1C842843005A0FFE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = awstest;
+			productName = awstest;
+			productReference = CBC13F0D1C77739F00D5CDA7 /* awstest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBC13F051C77739F00D5CDA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "s-takayanagi2";
+				TargetAttributes = {
+					CBC13F0C1C77739F00D5CDA7 = {
+						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CBC13F081C77739F00D5CDA7 /* Build configuration list for PBXProject "awstest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBC13F041C77739F00D5CDA7;
+			productRefGroup = CBC13F0E1C77739F00D5CDA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBC13F0C1C77739F00D5CDA7 /* awstest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBC13F0B1C77739F00D5CDA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3552E31C982E9D002C046D /* NOTICE in Resources */,
+				CBC13F1B1C77739F00D5CDA7 /* LaunchScreen.storyboard in Resources */,
+				CB3552E11C982E9D002C046D /* Amazon Software License.txt in Resources */,
+				CBC13F181C77739F00D5CDA7 /* Assets.xcassets in Resources */,
+				CBC13F161C77739F00D5CDA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBC13F091C77739F00D5CDA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBC13F131C77739F00D5CDA7 /* ViewController.swift in Sources */,
+				CB1F799E1CA8EFA900F00C60 /* LoginManager.swift in Sources */,
+				CBC13F111C77739F00D5CDA7 /* AppDelegate.swift in Sources */,
+				CB1F799C1CA8DCEB00F00C60 /* Constants.swift in Sources */,
+				CB1F79A01CA8F08200F00C60 /* ReceivePushSyncManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBC13F141C77739F00D5CDA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBC13F151C77739F00D5CDA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBC13F191C77739F00D5CDA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBC13F1A1C77739F00D5CDA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBC13F1D1C77739F00D5CDA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBC13F1E1C77739F00D5CDA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBC13F201C77739F00D5CDA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+					"$(PROJECT_DIR)/frameworks/extras",
+					"$(PROJECT_DIR)/awstest/frameworks",
+					"$(PROJECT_DIR)/awstest/frameworks/extras",
+					"$(PROJECT_DIR)/awstest",
+					"$(PROJECT_DIR)/awstest/extras",
+				);
+				INFOPLIST_FILE = awstest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aws.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "awstest/aws-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		CBC13F211C77739F00D5CDA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frameworks",
+					"$(PROJECT_DIR)/frameworks/extras",
+					"$(PROJECT_DIR)/awstest/frameworks",
+					"$(PROJECT_DIR)/awstest/frameworks/extras",
+					"$(PROJECT_DIR)/awstest",
+					"$(PROJECT_DIR)/awstest/extras",
+				);
+				INFOPLIST_FILE = awstest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aws.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "awstest/aws-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBC13F081C77739F00D5CDA7 /* Build configuration list for PBXProject "awstest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC13F1D1C77739F00D5CDA7 /* Debug */,
+				CBC13F1E1C77739F00D5CDA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBC13F1F1C77739F00D5CDA7 /* Build configuration list for PBXNativeTarget "awstest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC13F201C77739F00D5CDA7 /* Debug */,
+				CBC13F211C77739F00D5CDA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBC13F051C77739F00D5CDA7 /* Project object */;
+}

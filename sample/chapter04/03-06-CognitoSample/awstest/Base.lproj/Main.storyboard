@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="awstest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj0-Yb-YUv">
+                                <rect key="frame" x="24" y="171" width="61" height="30"/>
+                                <state key="normal" title="Get Data"/>
+                                <connections>
+                                    <action selector="getData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Te9-B8-b37"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNp-lq-7WC">
+                                <rect key="frame" x="24" y="202" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cIM-Ms-FAh"/>
+                                    <constraint firstAttribute="width" constant="280" id="tmC-gH-hsK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUy-ub-8vs">
+                                <rect key="frame" x="24" y="56" width="70" height="30"/>
+                                <state key="normal" title="Sync Data"/>
+                                <connections>
+                                    <action selector="syncData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vla-qf-lQz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="new data" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J7N-BJ-3BR">
+                                <rect key="frame" x="24" y="86" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="e19-nm-Y3r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3X-lw-hQ2">
+                                <rect key="frame" x="24" y="281" width="95" height="30"/>
+                                <state key="normal" title="Set PushSync"/>
+                                <connections>
+                                    <action selector="setPushSync:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8WP-5P-xbG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7z-85-KUE" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="24" y="342" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cj0-Yb-YUv" firstAttribute="top" secondItem="J7N-BJ-3BR" secondAttribute="bottom" constant="55" id="341-5Q-g5H"/>
+                            <constraint firstItem="bNp-lq-7WC" firstAttribute="top" secondItem="cj0-Yb-YUv" secondAttribute="bottom" constant="1" id="Av2-pT-b2V"/>
+                            <constraint firstItem="CUy-ub-8vs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="IOx-Do-TvA"/>
+                            <constraint firstItem="bNp-lq-7WC" firstAttribute="leading" secondItem="cj0-Yb-YUv" secondAttribute="leading" id="Ke8-cx-Oyc"/>
+                            <constraint firstItem="r7z-85-KUE" firstAttribute="leading" secondItem="C3X-lw-hQ2" secondAttribute="leading" id="Km0-I1-isR"/>
+                            <constraint firstItem="J7N-BJ-3BR" firstAttribute="top" secondItem="CUy-ub-8vs" secondAttribute="bottom" id="R2b-g0-Va5"/>
+                            <constraint firstItem="C3X-lw-hQ2" firstAttribute="leading" secondItem="bNp-lq-7WC" secondAttribute="leading" id="RgF-k6-FwW"/>
+                            <constraint firstItem="CUy-ub-8vs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="fKG-EJ-LuU"/>
+                            <constraint firstItem="C3X-lw-hQ2" firstAttribute="top" secondItem="bNp-lq-7WC" secondAttribute="bottom" constant="58" id="kT2-Dl-5oi"/>
+                            <constraint firstItem="J7N-BJ-3BR" firstAttribute="leading" secondItem="cj0-Yb-YUv" secondAttribute="leading" id="rXG-Hk-nMd"/>
+                            <constraint firstItem="J7N-BJ-3BR" firstAttribute="leading" secondItem="CUy-ub-8vs" secondAttribute="leading" id="wiX-hQ-dd2"/>
+                            <constraint firstItem="r7z-85-KUE" firstAttribute="top" secondItem="C3X-lw-hQ2" secondAttribute="bottom" constant="31" id="zDN-hI-s3a"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="getDataText" destination="bNp-lq-7WC" id="SSh-gH-OK3"/>
+                        <outlet property="loginButton" destination="r7z-85-KUE" id="LUw-Ke-9Nj"/>
+                        <outlet property="syncDataText" destination="J7N-BJ-3BR" id="8MN-Ia-Ev2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155" y="462"/>
+        </scene>
+    </scenes>
+</document>
