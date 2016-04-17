@@ -1,0 +1,15 @@
+API Gatewayで生成したSDK内の「generated-src」ディレクトリに含まれるソースコード（.h, .m ファイル）をここにコピーします。
+
+(想定ファイル一覧)
+ATTENDANCEAPIAttendanceAPIClient.h
+ATTENDANCEAPIAttendanceAPIClient.m
+ATTENDANCEAPIGetAttendancesResult.h
+ATTENDANCEAPIGetAttendancesResult.m
+ATTENDANCEAPIGetAttendancesResult_items_item.h
+ATTENDANCEAPIGetAttendancesResult_items_item.m
+ATTENDANCEAPIGetTokenAndIdentityIdResult.h
+ATTENDANCEAPIGetTokenAndIdentityIdResult.m
+ATTENDANCEAPISetAttendanceRequest.h
+ATTENDANCEAPISetAttendanceRequest.m
+ATTENDANCEAPISetAttendanceResult.h
+ATTENDANCEAPISetAttendanceResult.m

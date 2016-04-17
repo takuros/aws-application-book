@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PictureSharingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="vWP-mS-H0r" kind="presentation" identifier="showMainViewController" id="19p-Z0-SbD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="563" y="91"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="fsw-Rg-Xjc">
+            <objects>
+                <viewController id="vWP-mS-H0r" customClass="MainViewController" customModule="PictureSharingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sdE-zk-YPt"/>
+                        <viewControllerLayoutGuide type="bottom" id="HmC-3m-H08"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LCP-ur-8K6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-3K-ztP">
+                                <rect key="frame" x="20" y="285" width="560" height="30"/>
+                                <state key="normal" title="写真を共有する"/>
+                                <connections>
+                                    <action selector="touchSharingButton:" destination="vWP-mS-H0r" eventType="touchUpInside" id="3SS-k4-nwf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSx-GP-poH">
+                                <rect key="frame" x="20" y="570" width="560" height="30"/>
+                                <state key="normal" title="閉じる"/>
+                                <connections>
+                                    <action selector="touchCloseButton:" destination="vWP-mS-H0r" eventType="touchUpInside" id="7Hj-jT-5je"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HmC-3m-H08" firstAttribute="top" secondItem="QSx-GP-poH" secondAttribute="bottom" id="4CJ-0Z-cck"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QSx-GP-poH" secondAttribute="trailing" id="6ye-pt-kMh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t9h-3K-ztP" secondAttribute="trailing" id="Iqw-wz-CLU"/>
+                            <constraint firstItem="QSx-GP-poH" firstAttribute="centerX" secondItem="LCP-ur-8K6" secondAttribute="centerX" id="PBx-Sb-9oc"/>
+                            <constraint firstItem="QSx-GP-poH" firstAttribute="leading" secondItem="LCP-ur-8K6" secondAttribute="leadingMargin" id="c2M-Rn-IAf"/>
+                            <constraint firstItem="t9h-3K-ztP" firstAttribute="leading" secondItem="LCP-ur-8K6" secondAttribute="leadingMargin" id="jxG-UE-0F7"/>
+                            <constraint firstItem="t9h-3K-ztP" firstAttribute="centerY" secondItem="LCP-ur-8K6" secondAttribute="centerY" id="o0x-FO-IQS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="eoI-7r-1eM" kind="presentation" identifier="showImageViewController" id="FZS-1Y-99j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Oz-Sx-7bX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1243" y="91"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="Fe6-b2-LZm">
+            <objects>
+                <viewController id="eoI-7r-1eM" customClass="ImageViewController" customModule="PictureSharingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rmL-Jr-7Wz"/>
+                        <viewControllerLayoutGuide type="bottom" id="JgE-B7-6ny"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JSU-y7-iu9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUr-Rk-dCR">
+                                <rect key="frame" x="278" y="562" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SWL-YC-aVI"/>
+                                </constraints>
+                                <state key="normal" title="閉じる"/>
+                                <connections>
+                                    <action selector="touchCloseButton:" destination="eoI-7r-1eM" eventType="touchUpInside" id="NFg-wX-fPh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oxQ-ie-gcf">
+                                <rect key="frame" x="20" y="20" width="560" height="534"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oxQ-ie-gcf" firstAttribute="trailing" secondItem="JSU-y7-iu9" secondAttribute="trailingMargin" id="Q8F-pz-dYI"/>
+                            <constraint firstItem="MUr-Rk-dCR" firstAttribute="top" secondItem="oxQ-ie-gcf" secondAttribute="bottom" constant="8" id="VXW-Ok-VeF"/>
+                            <constraint firstItem="JgE-B7-6ny" firstAttribute="top" secondItem="MUr-Rk-dCR" secondAttribute="bottom" constant="8" id="X4E-Bi-1oP"/>
+                            <constraint firstItem="MUr-Rk-dCR" firstAttribute="centerX" secondItem="JSU-y7-iu9" secondAttribute="centerX" id="d0c-8B-vnu"/>
+                            <constraint firstItem="oxQ-ie-gcf" firstAttribute="leading" secondItem="JSU-y7-iu9" secondAttribute="leadingMargin" id="eV3-Wi-ZRL"/>
+                            <constraint firstItem="oxQ-ie-gcf" firstAttribute="top" secondItem="rmL-Jr-7Wz" secondAttribute="bottom" id="sBz-bR-MPP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="oxQ-ie-gcf" id="2bM-vT-5HM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Wg-H0-HZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="91"/>
+        </scene>
+    </scenes>
+</document>

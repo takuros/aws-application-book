@@ -1,0 +1,9 @@
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'AWSCore'
+pod 'AWSCognito'
+pod 'AWSS3'
+pod 'AWSSNS'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
