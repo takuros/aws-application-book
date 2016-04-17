@@ -14,12 +14,12 @@ class Request: NSObject {
     func requestAPI(heartrate: String,date: String,completion:(result: String) -> Void){
         let session = NSURLSession.sharedSession()
         //TODO URLを変更
-        let urlString = "https://khqn3yihnb.execute-api.ap-northeast-1.amazonaws.com/test/"
+        let urlString = "https://<ランダム>.execute-api.ap-northeast-1.amazonaws.com/test/"
         let request = NSMutableURLRequest(URL: NSURL(string: urlString)!)
         request.HTTPMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         //TODO APIkeyを変更
-        request.addValue("SAX4qXwllH2BkHf2Gvzbz45Xuv4jtJmY8lMNSAc7", forHTTPHeaderField: "x-api-key")
+        request.addValue("<生成したAPIKey>", forHTTPHeaderField: "x-api-key")
         
         // set the request-body(JSON)
         let params = ["heartrate":heartrate,"date":date] as Dictionary<String, String>
