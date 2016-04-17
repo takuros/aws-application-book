@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CognitoSyncMemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="vWP-mS-H0r" kind="presentation" identifier="showMainViewController" id="19p-Z0-SbD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="563" y="91"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="fsw-Rg-Xjc">
+            <objects>
+                <viewController id="vWP-mS-H0r" customClass="MainViewController" customModule="CognitoSyncMemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sdE-zk-YPt"/>
+                        <viewControllerLayoutGuide type="bottom" id="HmC-3m-H08"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LCP-ur-8K6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Lew-Gf-b1l">
+                                <rect key="frame" x="20" y="20" width="560" height="542"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSx-GP-poH">
+                                <rect key="frame" x="20" y="570" width="560" height="30"/>
+                                <state key="normal" title="閉じる"/>
+                                <connections>
+                                    <action selector="touchCloseButton:" destination="vWP-mS-H0r" eventType="touchUpInside" id="7Hj-jT-5je"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lew-Gf-b1l" firstAttribute="leading" secondItem="LCP-ur-8K6" secondAttribute="leadingMargin" id="0bL-dB-CIf"/>
+                            <constraint firstItem="HmC-3m-H08" firstAttribute="top" secondItem="QSx-GP-poH" secondAttribute="bottom" id="4CJ-0Z-cck"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QSx-GP-poH" secondAttribute="trailing" id="6ye-pt-kMh"/>
+                            <constraint firstItem="Lew-Gf-b1l" firstAttribute="top" secondItem="sdE-zk-YPt" secondAttribute="bottom" id="H9H-g0-mPK"/>
+                            <constraint firstItem="QSx-GP-poH" firstAttribute="centerX" secondItem="LCP-ur-8K6" secondAttribute="centerX" id="PBx-Sb-9oc"/>
+                            <constraint firstItem="QSx-GP-poH" firstAttribute="top" secondItem="Lew-Gf-b1l" secondAttribute="bottom" constant="8" id="b7F-Dp-nRq"/>
+                            <constraint firstItem="Lew-Gf-b1l" firstAttribute="trailing" secondItem="LCP-ur-8K6" secondAttribute="trailingMargin" id="bIj-xc-SvX"/>
+                            <constraint firstItem="QSx-GP-poH" firstAttribute="leading" secondItem="LCP-ur-8K6" secondAttribute="leadingMargin" id="c2M-Rn-IAf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="4CJ-0Z-cck" id="ikU-vi-FoW"/>
+                        <outlet property="textView" destination="Lew-Gf-b1l" id="saL-Vq-lPE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Oz-Sx-7bX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1243" y="91"/>
+        </scene>
+    </scenes>
+</document>

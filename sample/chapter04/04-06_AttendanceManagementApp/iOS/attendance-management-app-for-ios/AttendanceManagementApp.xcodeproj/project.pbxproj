@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		781FEB021C9DAF2100677AFD /* MyDeveloperAuthenticatedIdentityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781FEB011C9DAF2100677AFD /* MyDeveloperAuthenticatedIdentityProvider.swift */; };
+		784A94F01C9FC48500610D68 /* AttendanceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A94EF1C9FC48500610D68 /* AttendanceListViewController.swift */; };
+		784A94F21C9FCBE200610D68 /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784A94F11C9FCBE200610D68 /* UserDataStore.swift */; };
+		7897B9A31C9FEE0B0084E18B /* README in Resources */ = {isa = PBXBuildFile; fileRef = 7897B9A21C9FEE0B0084E18B /* README */; };
+		78CF38B01C8BDE5800A16270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CF38AF1C8BDE5800A16270 /* AppDelegate.swift */; };
+		78CF38B21C8BDE5800A16270 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CF38B11C8BDE5800A16270 /* ViewController.swift */; };
+		78CF38B51C8BDE5800A16270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CF38B31C8BDE5800A16270 /* Main.storyboard */; };
+		78CF38B71C8BDE5800A16270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78CF38B61C8BDE5800A16270 /* Assets.xcassets */; };
+		78CF38BA1C8BDE5800A16270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78CF38B81C8BDE5800A16270 /* LaunchScreen.storyboard */; };
+		EA2A1D5E36BEF0EE44A2F40A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B91B40862D14C41DD830B9 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		66B91B40862D14C41DD830B9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		780E1DD11C9D117B00FFFAB9 /* AttendanceManagementApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AttendanceManagementApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		781FEB011C9DAF2100677AFD /* MyDeveloperAuthenticatedIdentityProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDeveloperAuthenticatedIdentityProvider.swift; sourceTree = "<group>"; };
+		784A94EF1C9FC48500610D68 /* AttendanceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceListViewController.swift; sourceTree = "<group>"; };
+		784A94F11C9FCBE200610D68 /* UserDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataStore.swift; sourceTree = "<group>"; };
+		7897B9A21C9FEE0B0084E18B /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		78CF38AC1C8BDE5800A16270 /* AttendanceManagementApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AttendanceManagementApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78CF38AF1C8BDE5800A16270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78CF38B11C8BDE5800A16270 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78CF38B41C8BDE5800A16270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78CF38B61C8BDE5800A16270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78CF38B91C8BDE5800A16270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78CF38BB1C8BDE5800A16270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A875563BDCD49DA7806B7F7C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CA48909CA14FF6A825D13024 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78CF38A91C8BDE5800A16270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2A1D5E36BEF0EE44A2F40A /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10CE408DD284C3081244FA27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA48909CA14FF6A825D13024 /* Pods.debug.xcconfig */,
+				A875563BDCD49DA7806B7F7C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		780E1DD21C9D7EFC00FFFAB9 /* AttendanceAPI */ = {
+			isa = PBXGroup;
+			children = (
+				7897B9A21C9FEE0B0084E18B /* README */,
+			);
+			name = AttendanceAPI;
+			sourceTree = "<group>";
+		};
+		78CF38A31C8BDE5800A16270 = {
+			isa = PBXGroup;
+			children = (
+				78CF38AE1C8BDE5800A16270 /* AttendanceManagementApp */,
+				78CF38AD1C8BDE5800A16270 /* Products */,
+				10CE408DD284C3081244FA27 /* Pods */,
+				907AAED8A01317A12EDA4D99 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78CF38AD1C8BDE5800A16270 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78CF38AC1C8BDE5800A16270 /* AttendanceManagementApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78CF38AE1C8BDE5800A16270 /* AttendanceManagementApp */ = {
+			isa = PBXGroup;
+			children = (
+				78CF38B81C8BDE5800A16270 /* LaunchScreen.storyboard */,
+				78CF38B31C8BDE5800A16270 /* Main.storyboard */,
+				78CF38B61C8BDE5800A16270 /* Assets.xcassets */,
+				78CF38BB1C8BDE5800A16270 /* Info.plist */,
+				780E1DD21C9D7EFC00FFFAB9 /* AttendanceAPI */,
+				780E1DD11C9D117B00FFFAB9 /* AttendanceManagementApp-Bridging-Header.h */,
+				78CF38AF1C8BDE5800A16270 /* AppDelegate.swift */,
+				78CF38B11C8BDE5800A16270 /* ViewController.swift */,
+				784A94EF1C9FC48500610D68 /* AttendanceListViewController.swift */,
+				781FEB011C9DAF2100677AFD /* MyDeveloperAuthenticatedIdentityProvider.swift */,
+				784A94F11C9FCBE200610D68 /* UserDataStore.swift */,
+			);
+			path = AttendanceManagementApp;
+			sourceTree = "<group>";
+		};
+		907AAED8A01317A12EDA4D99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66B91B40862D14C41DD830B9 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78CF38AB1C8BDE5800A16270 /* AttendanceManagementApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78CF38BE1C8BDE5800A16270 /* Build configuration list for PBXNativeTarget "AttendanceManagementApp" */;
+			buildPhases = (
+				664FDF4FF51B320E07FF2C03 /* Check Pods Manifest.lock */,
+				78CF38A81C8BDE5800A16270 /* Sources */,
+				78CF38A91C8BDE5800A16270 /* Frameworks */,
+				78CF38AA1C8BDE5800A16270 /* Resources */,
+				7863840B56D3F579EB7A076D /* Embed Pods Frameworks */,
+				607550AF4D19EF6A531F54E6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AttendanceManagementApp;
+			productName = AttendanceManagementApp;
+			productReference = 78CF38AC1C8BDE5800A16270 /* AttendanceManagementApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78CF38A41C8BDE5800A16270 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = company;
+				TargetAttributes = {
+					78CF38AB1C8BDE5800A16270 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 78CF38A71C8BDE5800A16270 /* Build configuration list for PBXProject "AttendanceManagementApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78CF38A31C8BDE5800A16270;
+			productRefGroup = 78CF38AD1C8BDE5800A16270 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78CF38AB1C8BDE5800A16270 /* AttendanceManagementApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78CF38AA1C8BDE5800A16270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7897B9A31C9FEE0B0084E18B /* README in Resources */,
+				78CF38BA1C8BDE5800A16270 /* LaunchScreen.storyboard in Resources */,
+				78CF38B71C8BDE5800A16270 /* Assets.xcassets in Resources */,
+				78CF38B51C8BDE5800A16270 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		607550AF4D19EF6A531F54E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		664FDF4FF51B320E07FF2C03 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7863840B56D3F579EB7A076D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78CF38A81C8BDE5800A16270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784A94F21C9FCBE200610D68 /* UserDataStore.swift in Sources */,
+				78CF38B21C8BDE5800A16270 /* ViewController.swift in Sources */,
+				781FEB021C9DAF2100677AFD /* MyDeveloperAuthenticatedIdentityProvider.swift in Sources */,
+				784A94F01C9FC48500610D68 /* AttendanceListViewController.swift in Sources */,
+				78CF38B01C8BDE5800A16270 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78CF38B31C8BDE5800A16270 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78CF38B41C8BDE5800A16270 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78CF38B81C8BDE5800A16270 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78CF38B91C8BDE5800A16270 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78CF38BC1C8BDE5800A16270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78CF38BD1C8BDE5800A16270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78CF38BF1C8BDE5800A16270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA48909CA14FF6A825D13024 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AttendanceManagementApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.AttendanceManagementApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AttendanceManagementApp/AttendanceManagementApp-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		78CF38C01C8BDE5800A16270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A875563BDCD49DA7806B7F7C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AttendanceManagementApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.AttendanceManagementApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AttendanceManagementApp/AttendanceManagementApp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78CF38A71C8BDE5800A16270 /* Build configuration list for PBXProject "AttendanceManagementApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78CF38BC1C8BDE5800A16270 /* Debug */,
+				78CF38BD1C8BDE5800A16270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78CF38BE1C8BDE5800A16270 /* Build configuration list for PBXNativeTarget "AttendanceManagementApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78CF38BF1C8BDE5800A16270 /* Debug */,
+				78CF38C01C8BDE5800A16270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78CF38A41C8BDE5800A16270 /* Project object */;
+}

@@ -1,0 +1,18 @@
+PODS:
+  - AWSAPIGateway (2.3.5):
+    - AWSCore (= 2.3.5)
+  - AWSCognito (2.3.5):
+    - AWSCore (= 2.3.5)
+  - AWSCore (2.3.5)
+
+DEPENDENCIES:
+  - AWSAPIGateway
+  - AWSCognito
+  - AWSCore
+
+SPEC CHECKSUMS:
+  AWSAPIGateway: 3ebbf1a7cb26eeb8a18893bdef01d09c420d92ff
+  AWSCognito: f12700b4781897b2913544b36d6283f04ae72a44
+  AWSCore: 8022eda5778fd7b87c9182709d8a27388e1a31fb
+
+COCOAPODS: 0.39.0
