@@ -1,7 +1,9 @@
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'AWSCore'
-pod 'AWSCognito'
-pod 'FBSDKCoreKit'
-pod 'FBSDKLoginKit'
+target 'CognitoSyncMemoApp' do
+    pod 'AWSCore'
+    pod 'AWSCognito'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
+end
